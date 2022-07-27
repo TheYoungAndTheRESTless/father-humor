@@ -27,11 +27,11 @@
              
            **scale** 
            ⭐ ⭐ ⭐ 1-2 days 
-         - [ ] as a user I want to select the level of maturity of the jokes so I can deliver age-appropriate content to my audience
+         - [ ] as a user I want to select the category of the jokes so I can deliver content to my audience
             **feature tasks**
-             - user can import "father-humor.family-friendly" 
-             - user can import "father-humor.adult" 
-             - user can import "father-humor.nsfw" 
+             - user can import "father-humor.{}" 
+             - user can import "father-humor.{}" 
+             - user can import "father-humor.{}" 
              
              **acceptance tests**
 
