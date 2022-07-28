@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example_package_YOUR_USERNAME_HERE"
+name = "father_humor"
 version = "0.0.1"
 authors = [
   { name="Anthony Hill", email="anthonyhilldeveloper@gmail.com" },
@@ -22,5 +22,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/TheYoungAndTheRESTless/father-humor"
+"Bug Tracker" = "https://github.com/orgs/TheYoungAndTheRESTless/projects/1"
