@@ -1,16 +1,24 @@
-# This is a sample Python script.
+import requests
+from bs4 import BeautifulSoup
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+URL = 'https://www.countryliving.com/life/a27452412/best-dad-jokes/'
+
+page = requests.get(URL)
+
+soup = BeautifulSoup(page.content, 'html.parser')
+
+ff_joke = soup.findAll(class_='body-ul')
+# ff_joke = soup.findAll('li')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def get_family_friendly_jokes():
+    jokelist = []
+    for item in ff_joke:
+        jokes = item.text
+        print(jokes)
 
 
-# Press the green button in the gutter to run the script.
+# print(soup)
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    get_family_friendly_jokes()
